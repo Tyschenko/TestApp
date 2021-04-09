@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_height"
+    android:padding="@dimen/default_padding">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/baseTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/amountEditText"
+        android:layout_alignBottom="@id/amountEditText"
+        android:layout_marginEnd="@dimen/default_padding"
+        android:layout_toStartOf="@id/amountEditText"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/currency_name_text_size"
+        tools:text="EUR" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/amountEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:ellipsize="end"
+        android:gravity="end"
+        android:inputType="numberDecimal"
+        android:maxLength="12"
+        android:maxLines="1"
+        android:minWidth="@dimen/currency_value_min_width"
+        android:singleLine="true"
+        android:textSize="@dimen/currency_value_text_size"
+        tools:text="100" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+include ':app'
+include ':network'
+include ':data'
+include ':domain_impl'
+include ':domain_api'
+include ':feature_adapter'
+include ':feature_logger_api'
+include ':feature_logger_impl'
+
+rootProject.name='RevolutTestApp'
